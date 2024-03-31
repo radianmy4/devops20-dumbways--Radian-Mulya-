@@ -43,5 +43,4 @@ Answer :
  ![Network](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1//Networking%20%26%20VM/img/1-1-RancanganJaringan.png)
 
 # 4. **Buat step-by-step untuk menginstall Virutal Machine via VMware, Virtualbox atau VM pilihan kalian!**
-
-1. [VM-Install Ubuntu](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/tree/Master/Week1/VM-InstallUbuntu)
+ [VM-Install Ubuntu](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/tree/Master/Week1/VM-InstallUbuntu)
