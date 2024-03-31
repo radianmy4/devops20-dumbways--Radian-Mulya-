@@ -9,7 +9,6 @@ Task :
 (Gunakan app.diagrams.net untuk membuat diagramnya, Referensi gambar sudah disertakan)
 4. Buat step-by-step untuk menginstall Virutal Machine via VMware, Virtualbox atau VM pilihan kalian!
 ```
-Answer :
 
 # 1. **Perbedaan antara IP Privat & Public, serta IP Dynamic & Static!**
 **IP Private**
