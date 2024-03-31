@@ -31,124 +31,64 @@ Task :
 
 Lakukan cek update dan install respository sistem terlebih dahulu
 ```sh
-sudo apt update; sudo apt upgrade
+sudo apt update
 ```
-Input password yang dimiliki
+Input password yang dimiliki    
 
-<p align="center">
-    ![Update](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-1-Update.png)
-</p>
+ ![update](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-1-Update.png)
+
+```sh
+sudo apt upgrade
+```
+
+ ![upgrade](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-2-Upgrade.png)
 
 Untuk menginstall NGINX dapat menggunakan perintah 
 ```sh
 sudo apt install nginx
 ```
 Selanjutnya muncul notifikasi **Do you want to continue? [Y/n]** dan ketik saja **Y**. Jika sudah maka instalasi akan berjalan.
-<p align="center">
-<img src="../assets/image/3. OS & Linux/2.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
 
-Jika sudah selesai melakukan instalasi **NGINX**. Lakukan pengecekan version NGINX yang sudah di install dengan perintah 
-```sh
-nginx -v
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/3.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
+![Install](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-3-InstallNginx.png
+)
 
+**akses melalui browser/ `curl <ip kalian>`**
 
-## **PERINTAH-PERINTAH PADA NGINX**
+![curl](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-4-NginxBrowser.png
+)
 
-**1. NGINX STATUS**
+**Ganti IP address kalian (bebas) lalu akses kembali nginx (`/etc/netplan`)**
 
-```sh
-sudo systemctl status nginx
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/4.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
+![curl](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-5-GantiIP.png
+)
 
-Digunakan untuk melihat status dari NGINX.
-**2. ENABLE NGINX**
+**akses melalui browser/ `curl <ip yang sudah diganti>`**
 
-```sh
-sudo systemctl enable nginx
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/5.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
-**3. DISABLE NGINX**
+![curl](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-6-SetelehGanti.png
+)
 
-```sh
-sudo systemctl disable nginx
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/6.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
-
-**4. START NGINX**
-
-```sh
-sudo systemctl start nginx
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/7.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
-
-**5. RESTART NGINX**
-
-```sh
-sudo systemctl restart nginx
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/11.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
-
-**6. RELOAD NGINX**
-
-```sh
-sudo systemctl reload nginx
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/8.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
-
-**7. STOP NGINX**
-
-```sh
-sudo systemctl stop nginx
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/9.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
-
-**8. CHECK NGINX**
-
-```sh
-sudo systemctl enable nginx
-```
-```sh
-sudo systemctl start nginx
-```
-```sh
-sudo systemctl status nginx
-```
-<p align="center">
-<img src="../assets/image/3. OS & Linux/10.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
-
-Jika sudah Kalian dapat mengakses IP dari server kalian, maka akan terlihat seperti berikut:
-
-<p align="center">
-<img src="../assets/image/3. OS & Linux/12.JPG" alt="Alt text" title="Client - Server" style="display: inline-block; margin: 0 auto;  max-width: 300px ">
-</p>
 
 # 4. **Terangkan fungsi systemctl dan contoh commandnya (gunakan nginx)**
 
 **Systemctl** adalah alat baris perintah yang memungkinkan pengelolaan dan pemantauan sistem systemd dan manajer layanan.
 Lihat status layanan NGINX saat ini menggunakan perintah di bawah ini: 
-$ sudo systemctl status nginx
-Hentikan layanan NGINX dengan perintah berikut: 
-$ sudo systemctl stop nginx
+```sh
+sudo systemctl status nginx
+```
+
+![status](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-7-StatusNginx.png)
+
 Anda kemudian dapat memulai pencadangan layanan NGINX menggunakan perintah berikut: 
-$ sudo systemctl start nginx
+```sh
+sudo systemctl start nginx
+```
+
+![status](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-8-StartNginx.png)
+
+
+Hentikan layanan NGINX dengan perintah berikut: 
+```sh
+sudo systemctl stop nginx
+```
+
+![status](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Operating%20System%20%26%20Linux%20Server/img/1-9-StopNginx.png)
