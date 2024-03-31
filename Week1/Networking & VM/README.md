@@ -11,7 +11,7 @@ Task :
 ```
 Answer :
 
-# 1.**Perbedaan antara IP Privat & Public, serta IP Dynamic & Static!**
+# 1. **Perbedaan antara IP Privat & Public, serta IP Dynamic & Static!**
 **IP Private**
 - Untuk masalah security, IP private cukup terproteksi sebab tidak berhubungan langsung dengan IP eksternal / umum, sehingga sulit untuk diserang para hacker.
 - Lingkup area bersifat local.
