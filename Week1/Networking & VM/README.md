@@ -39,3 +39,6 @@ Answer :
       - CIDR Block : 192.168.1.xxx/24
       - Subnet : 255.255.255.0
       - Gateway : 192.168.1.1
+      
+    ![Network](https://github.com/radianmy4/devops20-dumbways--Radian-Mulya-/blob/Master/Week1/Networking%20%26%20VM/img/1-1-RancanganJaringan.png)
+
